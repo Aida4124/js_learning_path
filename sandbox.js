@@ -78,10 +78,9 @@ let html = ` <h2>${title}</h2>
 
 console.log(html);
 
-// ARRAY 
+// ARRAY
 
-let array = ['a', 'b', 'c', 'd'];
-
+let array = ["a", "b", "c", "d"];
 
 //console.log(array[0]);
 
@@ -93,12 +92,11 @@ let array = ['a', 'b', 'c', 'd'];
 
 //let method = array.indexOf('a');
 
-//CONCATENATE TWO ARRAYS 
+//CONCATENATE TWO ARRAYS
 
 //let method = array.concat(['d', 'f']);
 
-
-let method = array.push('aida' , 'k');
+let method = array.push("aida", "k");
 
 console.log(array);
 
@@ -106,30 +104,53 @@ console.log(array);
 
 let age = null;
 
-console.log(age , age + 3 , ` the age is ${age}`); 
+console.log(age, age + 3, ` the age is ${age}`);
 
-//BBLEAN 
+//BOOLEAN
 //true / false
 
 let emails = "aid@gmail";
 
 //let resultts = email.includes('@'); // it will return true if the email contains th sign '@'
 
-
-let names = ['aid', 'djf' , 'jfjf'];
-let resultts = names.includes('aida');
+let names = ["aid", "djf", "jfjf"];
+let resultts = names.includes("aida");
 console.log(resultts);
 
-// == to verify if the two comparators are the same and the result is a boolean 
-let ages = 10 ; 
+// == to verify if the two comparators are the same and the result is a boolean
+let ages = 10;
 
-console.log(ages == 11 );
+console.log(ages == 11);
 console.log(ages == 10);
-console.log(ages != 100); // NOT EQUAL TO 
+console.log(ages != 100); // NOT EQUAL TO
 // other sign like > , < , <= , >= ---------------
 
+// strict comparision '===' (diffrent types can't be equal)
 
+console.log("aidoucha is here");
 
+console.log(ages == 10); //true
+console.log(ages == "10"); //true
 
+// strict comparision '===' (diffrent types can't be equal)
+console.log(ages === 10); // true
+console.log(ages === "10"); // false
 
+//TYPE CONVERSION ---------------
 
+let score = "100";
+console.log(score + 1); // >> 1001 (concatenation)
+score = Number(score);
+console.log(score + 1); // 101
+console.log(typeof score); // number
+
+//let res = Number('hello world');
+//console.log(res); // NaN > not a number
+
+//convert into string
+let res = String(50);
+console.log(res, typeof res); // 50 string
+
+//convert into boolean
+let ress = Boolean(1);
+console.log(ress, typeof ress); // true 'boolean'
