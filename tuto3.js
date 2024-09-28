@@ -54,10 +54,13 @@ if (liste.length == 3){
   
 
 password = 'pass';
-if (password.length >= 8) {
+if (password.length >= 10) {
     console.log( "the password is longer enough!");
+} else if (password.length >= 8) {
+    console.log( "this password is in the right length" )
 } else {
-    console.log( "choose a stronger password" )
+    console.log( "choose a different password" );
+
 }
 
 
