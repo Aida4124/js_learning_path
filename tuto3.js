@@ -30,7 +30,35 @@ console.log('end');
 
 //------------- DO loops ----------------
 
+do{
+    console.log('value number ' , i ,);
+    i++;
+} while (i < list.length); //return the number of elements in the list
 
+// ---------------- if statements ----------------
+
+const agge = 20;
+
+if (agge > 20){
+    console.log("age is over 20");
+} else {
+    console.log("age is more than 20");
+}
+
+
+const liste = ['a', 'b', 'c'];
+
+if (liste.length == 3){
+    console.log( "the elements are " , liste[0] , liste[1] , liste[2]);
+}
+  
+
+password = 'pass';
+if (password.length >= 8) {
+    console.log( "the password is longer enough!");
+} else {
+    console.log( "choose a stronger password" )
+}
 
 
 
